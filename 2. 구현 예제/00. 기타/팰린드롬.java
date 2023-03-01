@@ -1,6 +1,5 @@
-# 배열 팰린드롬 검사
+/* # 배열 팰린드롬 검사 */
 
-```java
 public static boolean isPalindrome (int[] arr) {
     int start = 0;
     int end = arr.length-1;
@@ -10,4 +9,3 @@ public static boolean isPalindrome (int[] arr) {
     }
     return true;
 }
-```
