@@ -22,3 +22,11 @@ Arrays.sort(arr, (o1, o2) -> {
 # List
 
 ## list.stream().mapToInt(Integer::intValue).toArray();
+
+# Integer
+
+## 1. 16진수 -> 10진수 변환
+
+```java
+Integer.decode("0x1F7")
+```
