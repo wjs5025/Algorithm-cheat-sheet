@@ -5,14 +5,10 @@ static void twoPointerSearch() {
 		while (start < end) {
 			int tmp = nums[start] + nums[end];
 			
-			if (tmp == x) {
-				cnt++;
-			}
+			if (tmp == x) cnt++;
 
-			if (tmp > x) {
-				end--;
-			} else {
-				start++;
-			}
+			if (tmp > x) end--;
+			else start++;
+
 		}
-	}
+}
