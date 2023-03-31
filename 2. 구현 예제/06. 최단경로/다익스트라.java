@@ -51,17 +51,14 @@ public class Main {
         pq.offer(new Node(start, 0));
 
         while (!pq.isEmpty()) {
-            // 우선순위가 제일 높은 얘(무조건 비용이 제일 낮은 얘) 빼기
             Node node = pq.poll();
             int dist = node.getDistance(); // 비용 제일 낮은애의 거리
             int now = node.getIndex(); // 비용 제일 낮은 얘의 인덱스
 
-            // 현재 노드가 이미 처리된 적 있는 노드면 (다른 최단거리가 있는 애면)
             if (d[now] < dist) {
                 continue;
             }
 
-            // 현재 노드와 인접한 다른 노드 확인
             for (int i = 0; i < graph.get(now).size(); i++) {
                 int cost = d[now] + graph.get(now).get(i).getDistance();
 
