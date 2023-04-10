@@ -35,7 +35,7 @@ public class Main {
 			int a = sc.nextInt();
 			int b = sc.nextInt();
 			int c = sc.nextInt();
-			graph[a][b] = Math.min(graph[a][b], c); 
+			graph[a][b] = Math.min(graph[a][b], c);
 		}
 
 		// 점화식에 따라 플로이드 워셜 알고리즘을 수행

@@ -30,3 +30,25 @@ Arrays.sort(arr, (o1, o2) -> {
 ```java
 Integer.decode("0x1F7")
 ```
+
+
+# ArrayList
+## ArrayList 합집합
+```java
+ArrayList1.addAll(ArrayList2);
+```
+
+## ArrayList 교집합
+```java
+ArrayList1.retainAll(ArrayList2);
+```
+
+## ArrayLIst 부분집합
+```JAVA
+ArrayList1.containsAll(ArrayList2);
+```
+
+## ArrayList 차집합
+```java
+ArrayList1.removeAll(arrayList2);
+```
