@@ -7,7 +7,7 @@ private static long exp1(long x, long n) {
     return x * exp1(x, n - 1);
 }
 
-// 분할 정복 거듭제곱ㄴ
+// 분할 정복 거듭제곱
 private static long exp2(long x, long n) {
     callCnt2++;
 
